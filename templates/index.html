@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Budget Tracking Insights</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+    <div class="container">
+        <h2>Search for the Location to Live to view the total cost of living!</h2>
+        <form id="prompt-form">
+            <textarea id="prompt-input" placeholder="Search for the Location!" rows="4"></textarea>
+            <button type="submit" id="submit-btn">Generate Response</button>
+        </form>
+        <div id="response" class="response-box"></div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
